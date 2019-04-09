@@ -96,9 +96,10 @@ ggplot(gapminder,
 library(ggplot2)
 
 
-p <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
+p <- ggplot(gapminder, 
+            aes(x = gdpPercap, y = lifeExp, color = continent)) +
     geom_point() + 
-    scale_x_log10() + 
+  scale_x_log10() + 
     geom_smooth()
 p
 
